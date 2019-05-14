@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mViewModel = ViewModelProviders.of(this).get(com.btk.viewmodeldemo.CounterViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(CounterViewModel.class);
         textView.setText(String.valueOf(mViewModel.getCount()));
     }
 
